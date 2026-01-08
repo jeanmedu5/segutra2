@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title> SeguTra </title>
+	  <link rel="stylesheet"  href="assets/css/Index.css"   >
+	  <link rel='manifest' href='/manifest.json'>
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <style type="text/css">
+      .menu2, .menu2 ul, .menu2 li, .menu2 a {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+      }
+
+      .menu2 {
+      text-align: center;
+      height: 40px;
+      width: 270px;
+      background-color: #000000;
+      border-radius: 7px;
+      }
+
+      .menu2 li {
+      text-align: center;
+      position: relative;
+      list-style: none;
+      float: center;
+      display: block;
+      height: 40px;
+      }
+
+      .menu2 a {
+      text-align: center;
+      display: block;
+      padding: 0 16px;
+      margin: 6px 0;
+      line-height: 28px;
+      text-decoration: none;
+      font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #ffcb0b;
+      border-left: 1px solid #393942;
+      border-right: 1px solid #4f5058;
+      transition: color .2s ease-in-out;
+      }
+
+      .menu2 li:firs-child a {border-left: none;}
+      .menu2 li:last-child a {border-right: none;}
+      .menu2 li:hover > a {color: #0C0}
+      .menu2 ul {
+      text-align: center;
+      position: absolute;
+      top: 40px;
+      left: 0px;
+      opacity: 0;
+      background: #222;
+      border-radius: 0 0 5px 5px;
+      transition: opacity .20s ease .1s;
+      }
+
+      .menu2 li:hover > ul {opacity: 1;}
+      .menu2 ul li {
+      text-align: center;
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      transition: height .25s ease .1s;
+      }
+
+      .menu2 li:hover > ul li {
+      height: 36px;
+      overflow: visible;
+      padding: 0;
+      }
+
+      .menu2 ul li a {
+      text-align: center;
+      width: 250px;
+      padding: 4px 10px;
+      margin: 0;
+      border: none;
+      border-bottom: 1px solid #353539;
+      }
+      .menu2 ul li:last-child a { border: none; }
+ 
+      .botoncon{
+      text-align: center;
+      height: 40px;
+      width: 180px;
+      }
+    </style>
+</head>
+
+<body class="todapag">
+    
+<div class="nav">
+  <input type="checkbox">
+  <span></span>
+  <span></span>
+    <div class="menu">
+      <li><a href="https://segutra.webnode.es/">Quienes somos</a></li>
+      <li><a href="https://segutra.webnode.es/copia-de-politicas-y-condiciones/">Politicas y condiciones</a></li>
+      <li><a href="https://segutra.webnode.es/contacto/">Contacto</a></li>
+    </div>
+</div>
+
+<div class="ini">
+<h1 class="titulo"> SeguTra </h1>
+<p> Seguridad en tu transporte </p>
+</div class="cuadroini">
+<form method="post" action="login.php" name="signin-form">
+  <p style="margin-top:5px;font-size:1.5em;"> Ingreso conductor </p>
+  <input type="number" name="correo" placeholder="Escribe tu cedula" class="input1" required />
+  <br>
+  <input name="palabra_secreta" type="password" placeholder="Contraseña" class="input1" required pattern="[A-Za-z0-9]{4,25}"/>
+  <br>
+  <div class="botonent1">
+    <button type="submit" class="btnent" value="login">ENTRAR</button>
+  </div>
+
+<div class="botoncon">
+  <ul class="menu2">
+  <li><a href="#">Opciones conductor</a>
+  <ul>
+      <li><a href="comReg.php">Registrate aqui</a></li>
+      <li><a href="camContra.php">Actualizar datos</a></li>
+      <li><a href="evidencias.php">Ver evidencias</a></li>
+  </ul>
+  </li>
+  </ul>
+</div>
+</form>
+
+<div class="cuadroBotones">
+   <button type="button" class="btnent" value="login" onclick="location.href='pasajero.php'">Pedir conductor</button> 
+   <img style="width:250px; height:130px;" class="imag" src="img/banderas.png" />
+</div>
+</div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=573155298257&text=Hola" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+
+<footer>
+<div class="des">
+  <p >Desarrollado por Gemeba</p>
+</div>
+<div class="ver">
+	<p >Version 1.0</p>
+</div>
+</footer>
+
+</body>
+</html>

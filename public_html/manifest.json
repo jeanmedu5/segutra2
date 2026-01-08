@@ -1,0 +1,19 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "SEGUTRA",
+  "short_name": "SEGUTRA",
+  "scope": "/",
+  "display": "fullscreen",
+  "start_url": "https://segutra.com/",
+  "background_color": "#000000",
+  "theme_color": "transparent",
+  "description": "",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": "false",
+  "icons": [],
+  "url": "https://segutra.com",
+  "manifestUrl": "https://segutra.com/manifest.json",
+  "screenshots": []
+}
